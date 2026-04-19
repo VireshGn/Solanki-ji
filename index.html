@@ -80,7 +80,7 @@ nav.scrolled{box-shadow:0 4px 36px rgba(28,16,8,.08);background:rgba(254,250,242
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--yolk);font-size:10px;font-weight:700;letter-spacing:4.5px;text-transform:uppercase;padding:7px 16px;border-radius:4px;margin-bottom:28px;border:none;animation:fadeUp .6s 2.8s both;font-family:var(--font-body)}
 .pulse{width:6px;height:6px;background:var(--coral);border-radius:50%;animation:pulse 1.5s infinite;flex-shrink:0}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.4)}}
-.hero-name{font-family:var(--font-accent);font-size:clamp(52px,8vw,110px);line-height:.9;letter-spacing:-1px;color:var(--ink);animation:fadeUp .7s 3s both;font-weight:800;text-transform:uppercase}
+.hero-name{font-family:var(--font-accent);font-size:clamp(52px,8vw,96px);line-height:.9;letter-spacing:-1px;color:var(--ink);animation:fadeUp .7s 3s both;font-weight:800;text-transform:uppercase}
 .hero-name em{display:block;font-style:normal;background:linear-gradient(130deg,var(--coral),var(--crimson));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-tagline{font-family:var(--font-serif);font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:var(--ink2);max-width:440px;margin:22px 0 10px;animation:fadeUp .7s 3.1s both;font-style:italic;font-weight:700}
 .hero-desc{font-size:15px;line-height:1.9;color:var(--ink3);max-width:440px;margin:0 0 36px;animation:fadeUp .7s 3.2s both;font-family:var(--font-body)}
@@ -537,7 +537,12 @@ footer{background:var(--ink);padding:64px 5% 32px;border-top:2px solid rgba(249,
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:960px){
-  .about-layout{grid-template-columns:1fr}.about-visual{display:none}
+  .about-layout{grid-template-columns:1fr;gap:40px}
+  .about-visual{flex-direction:row;align-items:flex-start;gap:24px;opacity:.9}
+  .about-img-block{max-width:180px;flex-shrink:0}
+  .about-main-emoji{max-width:180px;font-size:48px;border-radius:16px;box-shadow:5px 5px 0 var(--ink)}
+  .about-badge-float{font-size:13px;padding:9px 13px;bottom:-10px;right:-10px}
+  .stats-row{margin-top:24px}
   .footer-grid{grid-template-columns:1fr 1fr}
   .tl-inner{grid-template-columns:1fr}.tl-poster-col{order:-1}
 }
@@ -941,9 +946,8 @@ footer{background:var(--ink);padding:64px 5% 32px;border-top:2px solid rgba(249,
       <p>Stand-up comedian, roast host, and professional liar (on stage only).</p>
       <p style="margin-top:8px;color:rgba(255,250,240,.18);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;font-family:var(--font-body)">No papas were harmed in the making of this website.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/aashishsolanki_/" target="_blank" class="footer-social-btn">📸</a>
+        <a href="https://www.instagram.com/ashishsolanki_1/" target="_blank" class="footer-social-btn">📸</a>
         <a href="https://www.youtube.com/@AashishSolankiComedy" target="_blank" class="footer-social-btn">▶</a>
-        <a href="https://linktr.ee/aashishsolanki" target="_blank" class="footer-social-btn">🌿</a>
       </div>
     </div>
     <div class="footer-col">
@@ -957,9 +961,8 @@ footer{background:var(--ink);padding:64px 5% 32px;border-top:2px solid rgba(249,
     </div>
     <div class="footer-col">
       <h4>Follow Along</h4>
-      <a href="https://www.instagram.com/aashishsolanki_/" target="_blank">📸 Instagram</a>
+      <a href="https://www.instagram.com/ashishsolanki_1/" target="_blank">📸 Instagram</a>
       <a href="https://www.youtube.com/@AashishSolankiComedy" target="_blank">▶ YouTube</a>
-      <a href="https://linktr.ee/aashishsolanki" target="_blank">🌿 Linktree</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -994,4 +997,5 @@ if(window.matchMedia('(hover:hover)').matches){
 </script>
 </body>
 </html>
+
 
